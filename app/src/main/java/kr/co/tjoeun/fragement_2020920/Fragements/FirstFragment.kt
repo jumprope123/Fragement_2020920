@@ -23,12 +23,9 @@ class FirstFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        toastBtn.setOnClickListener {
-
-            Toast.makeText(context,"버튼이 눌림",Toast.LENGTH_SHORT).show()
-
+        changeTextBtn.setOnClickListener {
+            firstTxt.text = "버튼이 눌림"
+        }
         }
 
     }
-
-}
